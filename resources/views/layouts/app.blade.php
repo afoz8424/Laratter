@@ -13,7 +13,6 @@
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
 
     <!-- Styles -->
     {{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
@@ -37,9 +36,9 @@
                         <li class="nav-item">
                             <form action="/messages">
                                 <div class="input-group">
-                                    <input type="text" name="query" class="form-control" placeholder="Search..."  required>
+                                    <input type="text" name="query" class="form-control" placeholder="{{trans('search')}}..."  required>
                                     <span class="input-group-btn">
-                                        <button class="btn btn-outline-success">Search</button>
+                                        <button class="btn btn-outline-success">{{trans('search')}}</button>
                                     </span>
                                 </div>
                                 
