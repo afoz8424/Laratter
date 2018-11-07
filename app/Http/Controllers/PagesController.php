@@ -15,4 +15,10 @@ class PagesController extends Controller
 	    	'messages' => $messages,
 	    ]);
     }
+
+    public function locale(Request $request)
+    {
+    	session()->put('locale',$request->input('lang'));
+    	return back();
+    }
 }
